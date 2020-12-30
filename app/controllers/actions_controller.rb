@@ -4,4 +4,8 @@ class ActionsController < ApplicationController
     @actions = Action.all
   end
 
+  def show
+    @action = Action.find(params[:id])
+  end
+
 end
