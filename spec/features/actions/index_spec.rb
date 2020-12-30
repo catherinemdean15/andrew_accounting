@@ -7,12 +7,16 @@ describe 'Actions index page' do
     @line2 = Line.create!(account:2000, debit_amount: 389.99, action_id: @action1.id)
   end
 
-  it 'shows the general ledger' do
-
+  it 'shows the list of transaction dates' do
   visit '/transactions'
-  save_and_open_page
   expect(page).to have_content(@action1.date)
   expect(page).to have_content(@action1.description)
+  end
+
+
+  it 'has links to transaction show' do
+  visit '/transactions'
+  expect(page).to have_link(@action1.date)
   end
 
 end
