@@ -1,0 +1,16 @@
+<h1><%= @action.date %></h1>
+<h3><%= @action.description %></h3>
+
+<table>
+  <tr>
+    <th>Account</th>
+    <th>Debit Amount</th>
+    <th>Credit Amount</th>
+  </tr>
+<% @action.lines.each do |line| %>
+  <tr><td><%= line.account %></td>
+  <td><%= line.debit_amount %></td>
+  <td><%= line.credit_amount %></td>
+  </tr>
+<% end %>
+</table>
