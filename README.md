@@ -1,24 +1,11 @@
-# README
+# Andrew Accounting
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is designed as a project to help Andrew with his accounting. All user stories are directed from what he believes he needs to complete his accounting tasks. 
 
-Things you may want to cover:
+## Using this repository
 
-* Ruby version
+This project is currently in development and is not ready to be utilized. 
 
-* System dependencies
+## Database
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The database contains two tables: actions (like transactions) and lines. An action can have many lines, and a line belongs to an action. 
